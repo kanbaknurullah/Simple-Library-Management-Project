@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Borrow Page</title>
+		<script src="jquery-3.5.1.min.js"></script>
+        <script src="main.js"></script>
+	</head>
+	<style>
+
+		body {
+  			background-color: #ffffff;
+		}
+
+		.leftPart {
+			float: left;
+			width: 70%;
+		}
+
+		.borrowButton {
+			background-color: #536cbe; 
+  			border: none;
+ 			color: black;
+ 			padding: 15px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 16px;
+			border-radius: 12px;
+		}
+
+		.searchButton {
+			background-color: #536cbe; 
+  			border: none;
+ 			color: black;
+ 			padding: 15px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 16px;
+			border-radius: 12px;
+		}
+		
+		.borrowBook {
+			margin-top: 50px;
+		}
+
+		.rightPart{
+			float: right;
+			width: 30%;
+		}
+
+		table {
+			width: 100%;
+		}
+
+		th {
+			height: 40px;
+			background-color: #536cbe;
+  			color: black;
+		}
+
+		th, td {
+  			padding: 15px;
+  			text-align: left;
+  			border-bottom: 1px solid black;
+		}
+
+		td {
+			font-size: 18px;
+		}
+
+		.searchElements {
+			margin: 50px 50px 50px 50px;
+		}
+
+		.searchByLabel {
+			float: left;
+		}
+
+		.searchByPicker {
+			float: left;
+			width: 100px;
+			margin-left: 40px;
+		}
+
+		.keywordLabel {
+			float: left;
+			margin-left: 40px;
+
+		}
+
+		.keywordInput {
+			float: left;
+			margin-left: 40px;
+		}
+
+		.submitButton {
+			float: left;
+			margin-left: 40px;
+		}
+
+		.booksTable {
+			float: left;
+			width: 80%;
+			margin-top: 40px;
+			margin-left: 40px;
+			
+		}
+
+	</style>
+
+	<body>
+		<div class="leftPart">
+			<div class="searchElements">
+			
+				<div class="searchByLabel">
+					<label>Search By</label>
+				</div>
+
+				<div class="searchByPicker">
+					<select class="searchBy" name="searchBy">
+						<option value="searchByTitle">Title</option>
+						<option value="searchByIsbn">ISBN</option>
+						<option value="searchByAuthor">Author</option>
+					</select>
+				</div>
+
+				<div class="keywordLabel">
+					<label>Keyword</label>
+				</div>
+			
+				<div class="keywordInput">
+					<input class="keyword" name="Keyword">
+				</div>
+
+				<div class="submitButton">
+					<button click="func" class="searchButton">Submit</button>
+				</div>
+			
+			</div>
+
+			<div class="booksTable">
+				<table>
+					<thead>
+						<tr>
+							<th>Isbn</th>
+							<th>Title</th>
+							<th>Author</th>
+							<th>Availability</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+					</tbody>
+					
+				</table>
+
+			</div>
+			
+		</div>
+
+		<div class="rightPart">
+			<div class="borrowBook">
+				<br>
+				<label>Borrow Book</label>
+				<br>
+				<br>
+				<label>Title</label>
+				<br>
+				<input class="borrowedBookTitle" name="borrowedBookTitle">
+				<br>
+				<label>Borrower Id</label>
+				<br>
+				<input class="borrowerId" name="borrowerId">
+				<br>
+				<br>
+				<button class="borrowButton">Submit</button>
+			</div>
+			
+		</div>
+
+		
+
+		
+		
+	</body>
+</html>
